@@ -1,0 +1,49 @@
+/* style.css */
+
+/* Common styles for both desktop and mobile */
+header nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 768px) {
+    ul {
+      display: flex;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  /* Mobile and Tablet styles */
+  @media (max-width: 767px) {
+    ul {
+      display: none; /* Hide the links on small devices */
+    }
+  
+    header nav{
+      justify-content: center; /* Center the logo */
+    }
+  
+    img {
+      max-width: 50%;
+    }
+  }
+  

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url('./../../assests/BebasNeue-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    background: #201D27;
+}
+
+.primary-content {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin: auto;
+    width: 44%;
+    /* Desktop width */
+}
+
+.primary-content button {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border: none;
+    /* width: 53%; */
+    color: #fff;
+    text-align: center;
+    font-family: Bebas Neue Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #29A643;
+    color: #fff;
+    padding: 6px 92.08px 7px 91.08px;
+}
+
+.primary-content>p:first-child {
+    color: #DDD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 39.5px;
+}
+
+.primary-content>p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pc-para-1 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 25px !important;
+}
+
+.pc-para-2 {
+    margin: auto;
+    width: 73%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.pc-link-1 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px !important;
+}
+
+.pc-link-1 a {
+    text-decoration-line: underline;
+}
+
+.pc-link-2 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.pc-link-2 a {
+    color: #D51820;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .primary-content {
+        width: 70%;
+        /* Tablet width */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .primary-content {
+        width: 90%;
+        /* Mobile width */
+    }
+}
