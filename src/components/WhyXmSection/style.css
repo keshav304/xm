@@ -1,0 +1,106 @@
+.whysmsection {
+    margin: 90px 93px 91px 81px;
+    color: #FFF;
+    font-style: normal;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.whysmsection-heading {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 42.62px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.whysmsection hr {
+    width: 70px;
+    height: 2px;
+    background: #29A643;
+    margin-inline-start: 0;
+}
+.whysmsection-description {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 32px;
+}
+.whyxm-grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background: #0B0819;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(45px);
+    text-align: left;
+}
+
+.superior-trade-execution {
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.competitive-pricing {
+    grid-area: 1 / 2 / span 1 / span 2;
+    height: 265px;
+    flex-shrink: 0;
+}
+
+.advanced-technology {
+    grid-area: 2 / 2 / span 1 / span 1;
+    height: 285px;
+    flex-shrink: 0;
+}
+
+.start-with-little {
+    grid-area: 2 / 3 / span 1 / span 1;
+    height: 285px;
+    flex-shrink: 0;
+}
+
+.competitive-pricing img,
+.advanced-technology img,
+.start-with-little img{
+    position: absolute;
+    top: 28px;
+    right: 26px;
+}
+
+
+@media (max-width: 1100px) {
+    .whyxm-grid-container {
+        grid-template-columns: 1fr;
+        /* 1 column */
+        grid-template-rows: auto;
+        /* Auto-sized rows */
+    }
+
+    .competitive-pricing,
+    .advanced-technology,
+    .start-with-little {
+        grid-area: auto;
+        /* Reset grid area */
+    }
+
+    .superior-trade-execution,
+    .competitive-pricing,
+    .advanced-technology,
+    .start-with-little {
+        height: 230px;
+    }
+}
