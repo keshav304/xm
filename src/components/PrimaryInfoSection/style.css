@@ -20,7 +20,7 @@ section {
     line-height: normal;
     margin: auto;
     width: 42%;
-    /* Desktop width */
+    padding-top: 121px;
 }
 
 .primary-content button {
@@ -29,7 +29,7 @@ section {
     border: none;
     color: #fff;
     text-align: center;
-    font-family: Bebas Neue Pro;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -99,5 +99,12 @@ section {
     .primary-content {
         width: 90%;
         /* Mobile width */
+    }
+    .pc-para-2 {
+        width: 85%;
+    }
+    .pc-link-2 {
+        width: 75%;
+        margin: auto;
     }
 }

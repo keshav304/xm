@@ -1,0 +1,88 @@
+.registrationsection {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-bottom: 87px;
+}
+
+.registerform-heading {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111.9%;
+}
+
+.registerform-description {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.event-info {
+    width: 656px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+    margin-top: 51px;
+}
+
+.event-info div {
+    border-right: 1px solid #fff;
+    padding-top: 24px;
+}
+
+.event-info div:first-child {
+    width: 50%;
+}
+
+.event-info div:nth-child(2) {
+    width: 35%;
+}
+
+.event-info div:last-child {
+    border: none;
+}
+.new-acc-text,
+.tandc-text{
+    font-style: normal;
+    text-align: center;
+    font-family: Roboto;
+    line-height: 111.9%;
+    font-weight: 400;
+}
+
+.new-acc-text {
+    color: #FFF;
+    font-size: 14px;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+
+.tandc-text {
+    color: #EFEFEF;
+    font-size: 12px;
+    padding-bottom: 87px;
+}
+
+.new-acc-text span{
+    text-decoration: underline;
+}
+
+.new-acc-text span,
+.tandc-text span{
+    color: #D51820;
+}

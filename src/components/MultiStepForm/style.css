@@ -1,0 +1,253 @@
+.multistepform {
+    width: 825px;
+    margin: auto;
+    margin-top: 85px;
+}
+
+/* Step indicators */
+.step-indicators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step1-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step2-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49%;
+    align-items: baseline;
+}
+
+.step-indicator>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.step-number {
+    color: #999;
+    font-weight: bold;
+}
+
+/* Progress bars */
+.progress-bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 4px 0px 0px 4px;
+    margin-top: 21px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: green;
+    /* Active progress bar color */
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+/* Input fields */
+.multistep-form input[type="text"],
+.multistep-form input[type="email"],
+.multistep-form input[type="date"],
+.multistep-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-container input[type="date"] {
+    padding: 1px;
+    padding-left: 5px;
+}
+
+/* Button */
+.input-btn {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 51px;
+    width: 345px;
+    height: 40px;
+    color: #FFF;
+    background: #CCC;
+}
+
+.register-btn,
+.next-btn {
+    background: #29A643;
+}
+
+/* Validation message */
+.validation-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Validation messages */
+.validation-messages {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+.validation-message {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: left;
+    list-style: circle;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.validation-message.valid {
+    color: #00ff00;
+    /* Green color for met criteria */
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.circle div {
+    width: 80%;
+    border: 3px solid #000;
+    border-radius: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle.green {
+    background-color: #29A642;
+    columns: #fff;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 45px;
+}
+
+.input-container input {
+    margin-top: 5px;
+    width: 396px;
+    height: 40px;
+    padding-left: 5px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+
+    .multistepform {
+        width: 525px;
+    }
+
+    .step1-fields {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input-container input {
+        width: 100%;
+    }
+
+    .input-btn {
+        width: 100%;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .event-info {
+        width: 260px;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+
+    .event-info div {
+        width: 100% !important;
+        border-right: none;
+    }
+
+    .event-info div:first-child {
+        border-bottom: 1px solid #fff;
+
+    }
+
+    .event-info div:nth-child(2) {
+        border-bottom: 1px solid #fff;
+    }
+
+    /* Hide step 2 text and progress bar on step 1, and vice versa */
+    .step1-fields .step2-text,
+    .step1-fields .step2-progress-bar,
+    .step2-fields .step1-text,
+    .step2-fields .step1-progress-bar {
+        display: none;
+    }
+
+    .input-container {
+        width: 90%;
+    }
+
+    .input-container input {
+        width: 96%;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .input-btn {
+        width: 90%;
+        height: 40px;
+    }
+
+    .multistepform {
+        width: 100%;
+    }
+
+    .step-indicators {
+        width: 100%;
+    }
+
+    .step-indicator {
+        width: 90%;
+        margin: auto;
+    }
+}

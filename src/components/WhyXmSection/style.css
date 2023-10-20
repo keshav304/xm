@@ -18,8 +18,8 @@
     width: 70px;
     height: 2px;
     background: #29A643;
-    margin-inline-start: 0;
 }
+
 .whysmsection-description {
     color: #FFF;
     text-align: center;
@@ -34,6 +34,7 @@
     margin-top: 25px;
     margin-bottom: 32px;
 }
+
 .whyxm-grid-container {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -47,12 +48,49 @@
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    -webkit-backdrop-filter: blur(45px);
     backdrop-filter: blur(45px);
     text-align: left;
+    padding-top: 57px;
+    padding-left: 52px;
+}
+
+.box h2 {
+    margin: 0;
+}
+
+.box hr {
+    margin-bottom: 22px;
+    margin-top: 22px;
+    margin-inline-start: 0;
+}
+
+.box p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 137.5% */
 }
 
 .superior-trade-execution {
     grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.superior-trade-execution h2 {
+    width: 50%;
+}
+
+.superior-trade-execution p {
+    width: 56%;
+}
+
+.superior-trade-execution img {
+    position: absolute;
+    bottom: 25.88px;
+    left: 42px;
 }
 
 .competitive-pricing {
@@ -61,10 +99,19 @@
     flex-shrink: 0;
 }
 
+.competitive-pricing p {
+    width: 49%;
+}
+
 .advanced-technology {
     grid-area: 2 / 2 / span 1 / span 1;
     height: 285px;
     flex-shrink: 0;
+}
+
+.competitive-pricing h2,
+.advanced-technology h2 {
+    width: 25%;
 }
 
 .start-with-little {
@@ -73,9 +120,14 @@
     flex-shrink: 0;
 }
 
+.advanced-technology p,
+.start-with-little p {
+    width: 54%;
+}
+
 .competitive-pricing img,
 .advanced-technology img,
-.start-with-little img{
+.start-with-little img {
     position: absolute;
     top: 28px;
     right: 26px;
@@ -90,6 +142,10 @@
         /* Auto-sized rows */
     }
 
+    .whysmsection-description {
+        width: 88%;
+    }
+
     .competitive-pricing,
     .advanced-technology,
     .start-with-little {
@@ -102,5 +158,106 @@
     .advanced-technology,
     .start-with-little {
         height: 230px;
+    }
+
+    .superior-trade-execution img,
+    .competitive-pricing img,
+    .advanced-technology img,
+    .start-with-little img {
+        position: absolute;
+        left: auto;
+        bottom: auto;
+        top: 28px;
+        right: 44px;
+    }
+
+    .superior-trade-execution img {
+        width: 41.463px;
+        height: 87.953px;
+    }
+
+    .competitive-pricing img {
+        width: 92.556px;
+        height: 90.521px;
+    }
+
+    .advanced-technology img {
+        width: 87.815px;
+        height: 89.857px;
+    }
+
+    .start-with-little img {
+        width: 59.048px;
+        height: 91.139px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whysmsection {
+        margin-left: 15px;
+        margin-right: 25px;
+    }
+
+    .whysmsection-heading {
+        margin: auto;
+        width: 70%;
+    }
+
+    .whysmsection-description {
+        width: 84%;
+    }
+
+    .box {
+        height: 235px;
+        padding-top: 43px;
+        padding-left: 30px;
+    }
+
+    .superior-trade-execution h2 {
+        width: 70%;
+    }
+
+    .superior-trade-execution p {
+        width: 75%;
+    }
+
+    .competitive-pricing p {
+        width: 73%;
+    }
+
+    .advanced-technology p,
+    .start-with-little p {
+        width: 75%;
+    }
+
+    .superior-trade-execution img,
+    .competitive-pricing img,
+    .advanced-technology img,
+    .start-with-little img {
+        position: absolute;
+        left: auto;
+        bottom: auto;
+        top: 19.2px;
+        right: 27.7px;
+    }
+
+    .superior-trade-execution img {
+        width: 26.829px;
+        height: 56.911px;
+    }
+
+    .competitive-pricing img {
+        width: 59.889px;
+        height: 58.573px;
+    }
+
+    .advanced-technology img {
+        width: 56.821px;
+        height: 58.143px;
+    }
+
+    .start-with-little img {
+        width: 38.207px;
+        height: 58.972px;
     }
 }
