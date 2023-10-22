@@ -4,10 +4,13 @@ import competitivePricingIcon from './../../assests/competitive-pricing-icon.png
 import dollarIcon from './../../assests/dollar-icon.png';
 import fastExecusionIcon from './../../assests/fast-execusion-icon.png';
 import techIcon from './../../assests/tech-icon.png';
+import GoldNumber2 from './../../assests/Gold-Number-2.png'
 
 export const WhyXmSection = () => {
   return (
     <>
+        <img src={GoldNumber2} id='gold-number-2' alt=''/>
+
       <div>
         <h4 className="whysmsection-heading">
           Why <strong>Trade</strong> with XM?

@@ -66,6 +66,7 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: #000;
 }
 
 .input-container input[type="date"] {
@@ -87,6 +88,7 @@
     height: 40px;
     color: #FFF;
     background: #CCC;
+    cursor: pointer;
 }
 
 .register-btn,
@@ -109,7 +111,7 @@
 }
 
 .validation-message {
-    color: #ff0000;
+    color: #959595;
     font-weight: bold;
     margin-top: 5px;
     text-align: left;
@@ -126,6 +128,21 @@
     /* Green color for met criteria */
 }
 
+.input-container input:focus~.validation-messages .invalid {
+    color: red;
+}
+
+.input-container .error-msg {
+    color: red;
+}
+
+input[type='password']:focus {
+    color: #000 !important;
+}
+
+/* .validation-message.invalid {
+    color: #ff0000;
+} */
 .circle {
     width: 32px;
     height: 32px;
@@ -167,11 +184,38 @@
     padding-left: 5px;
 }
 
+.registration-success {
+    margin: auto;
+    width: 80%;
+    width: 825px;
+    height: 211px;
+    border: 1px solid #31B63B;
+    background: #F3FEF4;
+    color: #3C763D;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    padding: 30px 25px 0 32px;
+}
+.registration-success h2 {
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.registration-success p {
+    font-size: 14px;
+}
+.registration-success h2 span{
+    margin-right: 14px;
+}
+
 /* Tablet Styles */
 @media (max-width: 1024px) {
 
     .multistepform {
-        width: 525px;
+        width: 700px;
     }
 
     .step1-fields {
@@ -189,6 +233,11 @@
 
     .input-btn {
         width: 100%;
+    }
+    .registration-success {
+        margin: auto;
+        width: 100%;
+    
     }
 }
 
@@ -225,6 +274,8 @@
 
     .input-container {
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .input-container input {
@@ -249,5 +300,28 @@
     .step-indicator {
         width: 90%;
         margin: auto;
+    }
+
+    .step2-fields {
+        flex-direction: column;
+    }
+
+    .new-acc-text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115.9%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 305px;
+        height: 32px;
+    }
+    .registration-success {
+        margin: auto;
+        width: 90%;
+        padding: 10px 5px 0 10px;
     }
 }

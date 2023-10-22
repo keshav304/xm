@@ -1,0 +1,210 @@
+.SecondryInfoSection-container {
+    display: flex;
+    padding-top: 92px;
+    padding-bottom: 89px;
+    padding-left: 55px;
+    padding-right: 99px;
+    justify-content: space-between;
+}
+
+.SecondryInfoFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SecondryInfoSection-container hr {
+    width: 72.275px;
+    height: 4px;
+    background: #D51820;
+    position: absolute;
+}
+
+.SecondryInfoSection-container>div:first-child h3 {
+    color: #444;
+    font-family: Roboto;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 90px;
+    letter-spacing: -1.6px;
+    width: 283px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.SecondryInfoSection-container>div:first-child h3 span {
+    color: #D51820;
+    font-family: Roboto;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 90px;
+    letter-spacing: -1.6px;
+}
+
+.SecondryInfoSection-container>div:first-child p {
+    width: 209px;
+    text-align: left;
+    color: #444;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.879px;
+}
+
+.SecondryInfo p {
+    width: 247px;
+    text-align: left;
+    margin: auto;
+}
+
+.SecondryInfoCommunity1,
+.SecondryInfoAward2 {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .SecondryInfoSection-container {
+        flex-wrap: wrap;
+    }
+
+    .SecondryInfoSection-container>div:first-child {
+        width: 100%;
+    }
+
+    .SecondryInfoFlex {
+        align-items: center;
+        flex: 0 0 50%;
+    }
+
+    .SecondryInfoSection-container>div:first-child h3 {
+        width: 100%;
+        text-align: center;
+        color: #444;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 41.881px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48.265px;
+        margin-top: 0;
+        margin-bottom: 0;
+        letter-spacing: -0.838px;
+    }
+
+    .SecondryInfoSection-container>div:first-child p {
+        text-align: center;
+        width: 100%;
+        color: #444;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33.879px;
+        margin-bottom: 57px;
+    }
+
+    .SecondryInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 58px;
+    }
+
+    .SecondryInfoCommunity1,
+    .SecondryInfoAward2 {
+        display: none;
+    }
+
+    .SecondryInfo p {
+        width: 247px;
+        text-align: left;
+        margin: 0;
+        height: 79.75px;
+        color: #444;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19.748px;
+    }
+
+    .SecondryInfoSection-container hr {
+        position: relative;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .SecondryInfoSection-container>div:first-child h3 {
+        width: 319px;
+        color: #444;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48.265px;
+        letter-spacing: -0.7px;
+        margin: auto;
+        margin-top: 0px;
+    }
+
+    .SecondryInfoSection-container hr {
+        position: relative;
+    }
+
+    .SecondryInfoSection-container {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 21px;
+    }
+
+    .SecondryInfoSection-container>div:first-child p {
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        margin-top: 22px;
+        margin-bottom: 65px;
+        color: #444;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    .SecondryInfo {
+        margin-bottom: 45px;
+        display: block;
+    }
+
+    .SecondryInfo h4 {
+        color: #444;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 19.773px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23.393px;
+        margin-bottom: 16px;
+    }
+
+    .SecondryInfo p {
+        text-align: center;
+        width: 286px;
+        height: 55px;
+    }
+
+    .SecondryInfoCommunity1,
+    .SecondryInfoAward2 {
+        display: block;
+    }
+
+    .SecondryInfoAward1,
+    .SecondryInfoCommunity2 {
+        display: none;
+    }
+}
