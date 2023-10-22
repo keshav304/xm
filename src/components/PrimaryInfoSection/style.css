@@ -139,6 +139,9 @@ section {
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
+    section {
+        position: relative;
+    }
     .primary-content {
         width: 70%;
         /* Tablet width */
@@ -147,28 +150,29 @@ section {
     #cube-glass-2 {
         right: 9%;
         width: 20%;
-        top: 39%;
+        top: 13%;
     }
 
     #cube-glass-3 {
-        left: -6%;
+        left: -8%;
         width: 22%;
-        top: 18%;
+        top: 4%;
     }
 
     #gold-number-1 {
         right: -9%;
         width: 25%;
-        top: 13%;
+        top: 4%;
     }
 
     #cup-glass-1 {
         width: 7%;
-        top: 7%;
+        top: 1%;
         right: 10%;
     }
     #perforated-ring {
-        top: 35%;
+        top: 11.2%;
+        left: 15%;
     }
     #green-bg {
         left: 3%;
@@ -178,6 +182,9 @@ section {
 
 /* Mobile Styles */
 @media (max-width: 767px) {
+    section {
+        position: relative;
+    }
     .primary-content {
         width: 90%;
         /* Mobile width */
@@ -203,13 +210,11 @@ section {
     #cube-glass-2 {
         right: -13%;
         width: 37%;
-        top: 10%;
+        top: 0%;
     }
     #gold-number-1 {
-        right: -20%;
-        width: 45%;
-        top: 93%;
+        right: -13%;
+        width: 37%;
+        top: 12.4%;
     }
-
-
 }

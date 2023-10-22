@@ -7,9 +7,18 @@ import { SecondryInfoSection } from './components/SecondryInfoSection';
 
 function App() {
   const items = Array.from({ length: 10 }, (_, i) => <div key={i}>{i + 1}</div>);
+  const handleScroll = (e) => {
+    const { scrollLeft, scrollTop, clientWidth, scrollWidth } = e.target;
+    
+    if (scrollLeft > 0 && scrollLeft < scrollWidth - clientWidth) {
+      // Prevent horizontal scrolling
+      e.preventDefault();
+      e.target.scrollLeft = 0;
+    }
+  };
 
   return (
-    <div className="App">
+    <div className="App" onScroll={handleScroll}>
       <Header/>
       <PrimaryInfoSection/>
       <Carousel items={items} />
